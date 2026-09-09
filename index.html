@@ -728,6 +728,57 @@ nav .wrap{
 }
 </style>
 
+
+<style id="centrage-titres-visuels-final">
+/*
+  Les libellés placés tout en haut des illustrations sont centrés
+  horizontalement afin qu'ils ne puissent plus être rognés à gauche.
+*/
+.case-media h1,
+.case-media h2,
+.case-media h3,
+.case-media h4,
+.case-media p,
+.case-media figcaption,
+.case-media .media-title,
+.case-media .visual-title,
+.case-media .illustration-title,
+.case-media .caption{
+  text-align:center!important;
+  padding-left:24px!important;
+  padding-right:24px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+/*
+  Les titres de ces illustrations sont dessinés directement dans leurs SVG.
+  On centre donc les éléments <text> du SVG dans leur zone de dessin.
+*/
+.case-media svg text:first-of-type{
+  text-anchor:middle!important;
+  transform-box:view-box!important;
+  transform-origin:center!important;
+}
+
+/* La marge de sécurité autour du visuel est conservée. */
+.case-media > svg,
+.case-media > img{
+  width:calc(100% - 32px)!important;
+  margin-left:16px!important;
+  margin-right:16px!important;
+}
+
+@media(max-width:760px){
+  .case-media > svg,
+  .case-media > img{
+    width:calc(100% - 24px)!important;
+    margin-left:12px!important;
+    margin-right:12px!important;
+  }
+}
+</style>
+
 </head>
 <body>
 
