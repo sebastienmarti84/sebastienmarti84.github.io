@@ -779,6 +779,63 @@ nav .wrap{
 }
 </style>
 
+
+<style id="fix-entetes-win-centres">
+/* Correction ciblée : le texte visible au-dessus de chaque illustration
+   est dans .case-media .win > span, pas dans le SVG. */
+.case-media .win{
+  position:relative!important;
+  display:grid!important;
+  place-items:center!important;
+  min-height:38px!important;
+  padding:8px 48px!important;
+  box-sizing:border-box!important;
+  width:100%!important;
+  overflow:visible!important;
+  text-align:center!important;
+}
+
+.case-media .win > span{
+  display:block!important;
+  width:100%!important;
+  max-width:100%!important;
+  margin:0 auto!important;
+  padding:0!important;
+  text-align:center!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  line-height:1.3!important;
+}
+
+/* Les trois petits points restent à gauche sans pousser le titre. */
+.case-media .win .dots{
+  position:absolute!important;
+  left:14px!important;
+  top:50%!important;
+  transform:translateY(-50%)!important;
+  display:flex!important;
+  gap:5px!important;
+}
+
+@media (max-width:760px){
+  .case-media .win{
+    min-height:42px!important;
+    padding:8px 38px!important;
+  }
+
+  .case-media .win > span{
+    font-size:.88rem!important;
+  }
+
+  .case-media .win .dots{
+    left:10px!important;
+  }
+}
+</style>
+
 </head>
 <body>
 
