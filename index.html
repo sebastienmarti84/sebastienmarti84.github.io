@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ PORTFOLIO TITLE-CENTER FIX V2 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Sébastien Marti — Administrateur système</title>
-<meta name="description" content="Sébastien Marti, administrateur système. 7 ans d'expérience en informatique, dont l'administration système : virtualisation, réseau, cloud et supervision 24/7. Ouvert aux opportunités.">
-
+<meta content="Sébastien Marti, administrateur système. 7 ans d'expérience en informatique, dont l'administration système : virtualisation, réseau, cloud et supervision 24/7. Ouvert aux opportunités." name="description"/>
 <style>
 :root{
   --bg:#f4f0e9; --paper:#fbfaf7; --paper2:#eee8df;
@@ -77,8 +77,6 @@ footer{background:#ebe6dd!important;border-top:1px solid #d5cec3;color:#6b7276}
 @media(max-width:760px){.wrap{width:min(calc(100% - 34px),var(--max))}.burger{display:block}.burger span{display:block;width:23px;height:1.5px;background:var(--ink);margin:5px 0}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:rgba(244,240,233,.99);padding:12px 18px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.navlinks a{padding:11px 8px}.nav-cta{text-align:center;margin-top:6px}.hero .wrap{padding:58px 0}.hero-id h1{font-size:clamp(3rem,15vw,4.4rem)}section{padding:74px 0}.skills-grid{grid-template-columns:1fr}.svc-row{grid-template-columns:1fr auto}.svc-metric{display:none}.contact-cards{flex-direction:column}.cc{width:100%}}
 @media(max-width:460px){.hero-actions{flex-direction:column}.btn{width:100%}.tech-wall{grid-template-columns:repeat(2,1fr)}}
 </style>
-
-
 <style id="mobile-premium-finition">
 @media (max-width: 760px){
 
@@ -290,8 +288,6 @@ footer{background:#ebe6dd!important;border-top:1px solid #d5cec3;color:#6b7276}
   }
 }
 </style>
-
-
 <style id="responsive-fix-final">
 /* Correction responsive globale */
 html, body{
@@ -558,8 +554,6 @@ nav .wrap{
   }
 }
 </style>
-
-
 <style id="fix-titres-images-mobile">
 /* Les titres intégrés au-dessus des visuels ne doivent jamais être rognés */
 .case-media{
@@ -636,8 +630,6 @@ nav .wrap{
   }
 }
 </style>
-
-
 <style id="fix-libelles-visuels-desktop-mobile">
 /*
   Zone de sécurité pour les libellés situés EN HAUT des illustrations.
@@ -727,8 +719,6 @@ nav .wrap{
   }
 }
 </style>
-
-
 <style id="centrage-titres-visuels-final">
 /*
   Les libellés placés tout en haut des illustrations sont centrés
@@ -778,8 +768,6 @@ nav .wrap{
   }
 }
 </style>
-
-
 <style id="fix-entetes-win-centres">
 /* Correction ciblée : le texte visible au-dessus de chaque illustration
    est dans .case-media .win > span, pas dans le SVG. */
@@ -835,611 +823,598 @@ nav .wrap{
   }
 }
 </style>
-
-</head>
+<style id="exact-win-title-mobile-v2">
+@media(max-width:760px){
+  .case-media .win{height:48px!important;min-height:48px!important}
+  .case-media .win > span{
+    max-width:calc(100% - 80px)!important;
+    white-space:normal!important;
+    overflow:visible!important;
+    text-overflow:clip!important;
+    line-height:1.15!important;
+    font-size:.84rem!important;
+  }
+}
+</style></head>
 <body>
-
 <nav>
-  <div class="wrap">
-    <a href="#top" class="brand">sebastien<span>.marti</span></a>
-    <div class="navlinks" id="menu">
-      <a href="#profil">Profil</a>
-      <a href="#competences">Compétences</a>
-      <a href="#realisations">Réalisations</a>
-      <a href="#experience">Expérience</a>
-      <a href="#formation">Formation</a>
-      <a href="#contact" class="nav-cta">Me contacter</a>
-    </div>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
+<div class="wrap">
+<a class="brand" href="#top">sebastien<span>.marti</span></a>
+<div class="navlinks" id="menu">
+<a href="#profil">Profil</a>
+<a href="#competences">Compétences</a>
+<a href="#realisations">Réalisations</a>
+<a href="#experience">Expérience</a>
+<a href="#formation">Formation</a>
+<a class="nav-cta" href="#contact">Me contacter</a>
+</div>
+<button aria-label="Menu" class="burger" id="burger"><span></span><span></span><span></span></button>
+</div>
 </nav>
-
 <!-- HERO -->
 <header class="hero" id="top">
-  <div class="wrap">
-    <div class="hero-id reveal">
-      <span class="eyebrow">Administrateur système · Riom (63)</span>
-      <h1>Sébastien<br>Marti</h1>
-      <p class="role">// infrastructures qui tiennent la charge</p>
-      <p class="pitch">Je déploie, administre, sécurise et supervise des infrastructures et services IT — du système et de la virtualisation au réseau, jusqu'à la supervision 24/7.</p>
-      <div class="hero-stats">
-        <div class="stat"><div class="n">7 ans</div><div class="l">En informatique</div></div>
-        <div class="stat"><div class="n">24/7</div><div class="l">Supervision</div></div>
-        <div class="stat"><div class="n">5</div><div class="l">Domaines</div></div>
-      </div>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Me contacter →</a>
-        <a href="#cv" class="btn btn-ghost">Voir mon CV ↗</a>
-         <a href="#competences" class="btn btn-ghost">Voir les compétences</a>
-      </div>
-    </div>
-
-    <!-- SIGNATURE : console de supervision -->
-    <div class="console reveal" aria-label="Statut des compétences">
-      <div class="console-bar">
-        <div class="dot-rgb"><i></i><i></i><i></i></div>
-        <span class="path">~/marti/stack — status</span>
-        <span class="console-live"><b></b>LIVE</span>
-      </div>
-      <div class="svc">
-        <div class="svc-row"><div class="svc-name">Système &amp; Virtualisation<small>HyperV · VMware · vSphere · Windows Server</small></div><span class="svc-metric">v.2013→25</span><span class="svc-status"><i></i>Opérationnel</span></div>
-        <div class="svc-row"><div class="svc-name">Réseau<small>Cisco · LAN/VLAN/WAN · VPN · NAT · ToIP</small></div><span class="svc-metric">routé</span><span class="svc-status"><i></i>Opérationnel</span></div>
-        <div class="svc-row"><div class="svc-name">Cloud &amp; Outils<small>Microsoft 365 · SharePoint · Veeam · Docker · GLPI</small></div><span class="svc-metric">up</span><span class="svc-status"><i></i>Opérationnel</span></div>
-        <div class="svc-row"><div class="svc-name">Supervision<small>Zabbix · Centreon · LibreNMS · 24/7</small></div><span class="svc-metric">monitoring</span><span class="svc-status"><i></i>Opérationnel</span></div>
-        <div class="svc-row"><div class="svc-name">Pilotage &amp; Management<small>Budgets · encadrement · sous-traitance</small></div><span class="svc-metric">actif</span><span class="svc-status"><i></i>Opérationnel</span></div>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="hero-id reveal">
+<span class="eyebrow">Administrateur système · Riom (63)</span>
+<h1>Sébastien<br/>Marti</h1>
+<p class="role">// infrastructures qui tiennent la charge</p>
+<p class="pitch">Je déploie, administre, sécurise et supervise des infrastructures et services IT — du système et de la virtualisation au réseau, jusqu'à la supervision 24/7.</p>
+<div class="hero-stats">
+<div class="stat"><div class="n">7 ans</div><div class="l">En informatique</div></div>
+<div class="stat"><div class="n">24/7</div><div class="l">Supervision</div></div>
+<div class="stat"><div class="n">5</div><div class="l">Domaines</div></div>
+</div>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#contact">Me contacter →</a>
+<a class="btn btn-ghost" href="#cv">Voir mon CV ↗</a>
+<a class="btn btn-ghost" href="#competences">Voir les compétences</a>
+</div>
+</div>
+<!-- SIGNATURE : console de supervision -->
+<div aria-label="Statut des compétences" class="console reveal">
+<div class="console-bar">
+<div class="dot-rgb"><i></i><i></i><i></i></div>
+<span class="path">~/marti/stack — status</span>
+<span class="console-live"><b></b>LIVE</span>
+</div>
+<div class="svc">
+<div class="svc-row"><div class="svc-name">Système &amp; Virtualisation<small>HyperV · VMware · vSphere · Windows Server</small></div><span class="svc-metric">v.2013→25</span><span class="svc-status"><i></i>Opérationnel</span></div>
+<div class="svc-row"><div class="svc-name">Réseau<small>Cisco · LAN/VLAN/WAN · VPN · NAT · ToIP</small></div><span class="svc-metric">routé</span><span class="svc-status"><i></i>Opérationnel</span></div>
+<div class="svc-row"><div class="svc-name">Cloud &amp; Outils<small>Microsoft 365 · SharePoint · Veeam · Docker · GLPI</small></div><span class="svc-metric">up</span><span class="svc-status"><i></i>Opérationnel</span></div>
+<div class="svc-row"><div class="svc-name">Supervision<small>Zabbix · Centreon · LibreNMS · 24/7</small></div><span class="svc-metric">monitoring</span><span class="svc-status"><i></i>Opérationnel</span></div>
+<div class="svc-row"><div class="svc-name">Pilotage &amp; Management<small>Budgets · encadrement · sous-traitance</small></div><span class="svc-metric">actif</span><span class="svc-status"><i></i>Opérationnel</span></div>
+</div>
+</div>
+</div>
 </header>
-
 <!-- PROFIL -->
 <section id="profil">
-  <div class="wrap">
-    <div class="profil-grid">
-      <div class="reveal">
-        <span class="eyebrow">Profil</span>
-        <p class="profil-lead" style="margin-top:22px">
-          <strong>7 ans dans l'informatique</strong>, dont bientôt 2 ans dédiés à l'administration système : j'administre serveurs, réseaux et services critiques avec une exigence constante de <strong>disponibilité, de sécurité et de fiabilité</strong>. Virtualisation, cloud, supervision : j'interviens de la conception à l'exploitation, et je pilote aussi bien la technique que les budgets et la sous-traitance.
+<div class="wrap">
+<div class="profil-grid">
+<div class="reveal">
+<span class="eyebrow">Profil</span>
+<p class="profil-lead" style="margin-top:22px">
+<strong>7 ans dans l'informatique</strong>, dont bientôt 2 ans dédiés à l'administration système : j'administre serveurs, réseaux et services critiques avec une exigence constante de <strong>disponibilité, de sécurité et de fiabilité</strong>. Virtualisation, cloud, supervision : j'interviens de la conception à l'exploitation, et je pilote aussi bien la technique que les budgets et la sous-traitance.
         </p>
-        <p style="color:var(--text-soft);margin-top:20px">
+<p style="color:var(--text-soft);margin-top:20px">
           Mon parcours mêle terrain et responsabilité : passé par la logistique en tant que Key User et responsable d'entrepôt, j'ai fait de l'informatique mon métier à part entière en validant un titre professionnel en 2024. Pédagogue et disponible, je suis à l'aise pour vulgariser, dépanner et accompagner les équipes autant que pour déployer et administrer une infrastructure.
         </p>
-      </div>
-      <div class="reveal">
-        <div class="qualities-head">Ce sur quoi on peut compter</div>
-        <div class="qualities">
-          <span class="chip">Pédagogue</span>
-          <span class="chip">À l'écoute</span>
-          <span class="chip">Disponible</span>
-          <span class="chip">Dynamique</span>
-          <span class="chip">Sens des responsabilités</span>
-          <span class="chip">Analyse de situation</span>
-          <span class="chip">Réactivité</span>
-          <span class="chip">Adaptation</span>
-          <span class="chip">Esprit d'équipe</span>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+<div class="reveal">
+<div class="qualities-head">Ce sur quoi on peut compter</div>
+<div class="qualities">
+<span class="chip">Pédagogue</span>
+<span class="chip">À l'écoute</span>
+<span class="chip">Disponible</span>
+<span class="chip">Dynamique</span>
+<span class="chip">Sens des responsabilités</span>
+<span class="chip">Analyse de situation</span>
+<span class="chip">Réactivité</span>
+<span class="chip">Adaptation</span>
+<span class="chip">Esprit d'équipe</span>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- COMPETENCES -->
 <section id="competences">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Compétences</span>
-      <h2>Une stack complète, du serveur au réseau</h2>
-      <p>Cinq domaines pratiqués sur le terrain, de l'infrastructure physique jusqu'au pilotage, avec des services réellement déployés et exploités.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card reveal">
-        <div class="idx">01 / système</div>
-        <h3>Système &amp; virtualisation</h3>
-        <p class="desc">Déploiement et administration de serveurs et d'environnements virtualisés.</p>
-        <div class="tags">
-          <span class="tag">HyperV</span><span class="tag">VMware</span><span class="tag">vSphere</span>
-          <span class="tag">Windows Server</span><span class="tag">Windows 8/10/11</span>
-          <span class="tag">Linux</span><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">Debian 11/12/13</span>
-          <span class="tag">AD</span><span class="tag">GPO</span><span class="tag">DHCP</span><span class="tag">DNS</span>
-          <span class="tag">FOG</span><span class="tag">WAPT</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="idx">02 / réseau</div>
-        <h3>Réseau &amp; téléphonie</h3>
-        <p class="desc">Conception, sécurisation et interconnexion de réseaux multi-sites.</p>
-        <div class="tags">
-          <span class="tag">Cisco</span><span class="tag">LAN</span><span class="tag">VLAN</span>
-          <span class="tag">WAN</span><span class="tag">VPN</span><span class="tag">NAT</span>
-          <span class="tag">Routage</span><span class="tag">ToIP</span>
-          <span class="tag">Xivo</span><span class="tag">Asterisk</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="idx">03 / cloud</div>
-        <h3>Cloud &amp; outils</h3>
-        <p class="desc">Services collaboratifs, conteneurisation et gestion de parc, dont déploiement d’un serveur GLPI de zéro.</p>
-        <div class="tags">
-          <span class="tag">Microsoft 365</span><span class="tag">SharePoint Online</span><span class="tag">Azure</span>
-          <span class="tag">SSO / IAM</span><span class="tag">Docker</span><span class="tag">Portainer</span>
-          <span class="tag">Nextcloud</span><span class="tag">FTP / FTPS</span><span class="tag">GLPI</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="idx">04 / supervision</div>
-        <h3>Supervision 24/7</h3>
-        <p class="desc">Monitoring proactif, alerting et disponibilité des services.</p>
-        <div class="tags">
-          <span class="tag">Zabbix</span><span class="tag">Centreon</span>
-          <span class="tag">LibreNMS</span><span class="tag">Veeam</span><span class="tag">24/7</span>
-        </div>
-      </div>
-      <div class="skill-card reveal" style="grid-column:1/-1">
-        <div class="idx">05 / pilotage</div>
-        <h3>Pilotage &amp; management</h3>
-        <p class="desc">Au-delà de la technique : conduire les projets, les budgets et les équipes.</p>
-        <div class="tags">
-          <span class="tag">Planification d'activités</span><span class="tag">Gestion de budgets</span>
-          <span class="tag">Encadrement hiérarchique</span><span class="tag">Pilotage de sous-traitance</span>
-          <span class="tag">Reporting</span><span class="tag">Stratégie &amp; gouvernance</span><span class="tag">Management</span>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="section-head reveal">
+<span class="eyebrow">Compétences</span>
+<h2>Une stack complète, du serveur au réseau</h2>
+<p>Cinq domaines pratiqués sur le terrain, de l'infrastructure physique jusqu'au pilotage, avec des services réellement déployés et exploités.</p>
+</div>
+<div class="skills-grid">
+<div class="skill-card reveal">
+<div class="idx">01 / système</div>
+<h3>Système &amp; virtualisation</h3>
+<p class="desc">Déploiement et administration de serveurs et d'environnements virtualisés.</p>
+<div class="tags">
+<span class="tag">HyperV</span><span class="tag">VMware</span><span class="tag">vSphere</span>
+<span class="tag">Windows Server</span><span class="tag">Windows 8/10/11</span>
+<span class="tag">Linux</span><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">Debian 11/12/13</span>
+<span class="tag">AD</span><span class="tag">GPO</span><span class="tag">DHCP</span><span class="tag">DNS</span>
+<span class="tag">FOG</span><span class="tag">WAPT</span>
+</div>
+</div>
+<div class="skill-card reveal">
+<div class="idx">02 / réseau</div>
+<h3>Réseau &amp; téléphonie</h3>
+<p class="desc">Conception, sécurisation et interconnexion de réseaux multi-sites.</p>
+<div class="tags">
+<span class="tag">Cisco</span><span class="tag">LAN</span><span class="tag">VLAN</span>
+<span class="tag">WAN</span><span class="tag">VPN</span><span class="tag">NAT</span>
+<span class="tag">Routage</span><span class="tag">ToIP</span>
+<span class="tag">Xivo</span><span class="tag">Asterisk</span>
+</div>
+</div>
+<div class="skill-card reveal">
+<div class="idx">03 / cloud</div>
+<h3>Cloud &amp; outils</h3>
+<p class="desc">Services collaboratifs, conteneurisation et gestion de parc, dont déploiement d’un serveur GLPI de zéro.</p>
+<div class="tags">
+<span class="tag">Microsoft 365</span><span class="tag">SharePoint Online</span><span class="tag">Azure</span>
+<span class="tag">SSO / IAM</span><span class="tag">Docker</span><span class="tag">Portainer</span>
+<span class="tag">Nextcloud</span><span class="tag">FTP / FTPS</span><span class="tag">GLPI</span>
+</div>
+</div>
+<div class="skill-card reveal">
+<div class="idx">04 / supervision</div>
+<h3>Supervision 24/7</h3>
+<p class="desc">Monitoring proactif, alerting et disponibilité des services.</p>
+<div class="tags">
+<span class="tag">Zabbix</span><span class="tag">Centreon</span>
+<span class="tag">LibreNMS</span><span class="tag">Veeam</span><span class="tag">24/7</span>
+</div>
+</div>
+<div class="skill-card reveal" style="grid-column:1/-1">
+<div class="idx">05 / pilotage</div>
+<h3>Pilotage &amp; management</h3>
+<p class="desc">Au-delà de la technique : conduire les projets, les budgets et les équipes.</p>
+<div class="tags">
+<span class="tag">Planification d'activités</span><span class="tag">Gestion de budgets</span>
+<span class="tag">Encadrement hiérarchique</span><span class="tag">Pilotage de sous-traitance</span>
+<span class="tag">Reporting</span><span class="tag">Stratégie &amp; gouvernance</span><span class="tag">Management</span>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- REALISATIONS -->
-<section id="realisations" class="ink">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Réalisations</span>
-      <h2>Des infrastructures montées de zéro, chez PGDIS</h2>
-      <p>Pas des cases cochées : des serveurs conçus, sécurisés et mis en production, avec un besoin réel derrière chacun.</p>
-    </div>
-
-    <div class="cases">
-      <article class="case reveal">
-        <div class="case-top">
-          <span class="case-idx">01 / continuité d’activité</span>
-          <div class="case-tags"><span class="tag">Veeam</span><span class="tag">Sauvegarde</span><span class="tag">Restauration</span><span class="tag">PRA</span></div>
-        </div>
-        <h3>Reprise après incident : entreprise relancée en moins de 48 h</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Enjeu</div><p>Après un incident majeur, l’objectif était de restaurer les systèmes et les données suffisamment vite pour permettre la reprise de l’activité.</p></div>
-          <div class="case-col"><div class="lab">Notre intervention</div><p>Gestion et exploitation des sauvegardes Veeam, puis restauration des systèmes et données nécessaires à la reprise de l’entreprise.</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p><strong>Activité relancée en moins de 48 h</strong>, avec une perte de données limitée à environ <strong>6 heures</strong>.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-top">
-          <span class="case-idx">02 / identité &amp; accès</span>
-          <div class="case-tags"><span class="tag">Active Directory</span><span class="tag">Groupes</span><span class="tag">Droits</span><span class="tag">Windows Server</span></div>
-        </div>
-        <h3>Refonte de l’Active Directory et des droits d’accès</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>L’Active Directory reposait principalement sur des comptes utilisateurs, sans structuration suffisante par groupes et droits.</p></div>
-          <div class="case-col"><div class="lab">Notre intervention</div><p>Refonte de l’organisation de l’AD avec mise en place d’une gestion structurée des groupes et des droits d’accès.</p></div>
-          <div class="case-col result"><div class="lab">Apport</div><p>Une administration des accès plus claire, plus cohérente et plus simple à maintenir au quotidien.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-top">
-          <span class="case-idx">03 / Microsoft 365</span>
-          <div class="case-tags"><span class="tag">Microsoft 365</span><span class="tag">SharePoint Online</span><span class="tag">Tenant</span><span class="tag">Droits</span></div>
-        </div>
-        <h3>Administration du tenant Microsoft 365 &amp; SharePoint</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Périmètre</div><p>Administration courante du tenant Microsoft 365 et des espaces collaboratifs SharePoint Online.</p></div>
-          <div class="case-col"><div class="lab">Ce que j’ai géré</div><p>Création et suppression d’utilisateurs, gestion des droits et accès, ainsi que création et suppression de sites SharePoint.</p></div>
-          <div class="case-col result"><div class="lab">Apport</div><p>Gestion centralisée des identités, des accès et des espaces de partage documentaire de l’entreprise.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-media">
-          <div class="win"><div class="dots"><i></i><i></i><i></i></div><span>grafana — supervision PGDIS</span></div>
-          <svg viewBox="0 0 640 250" role="img" aria-label="Dashboard de supervision Grafana">
-            <rect width="640" height="250" fill="#0B1620"/>
-            <g stroke="#1B2C3E" stroke-width="1">
-              <line x1="24" y1="60" x2="616" y2="60"/><line x1="24" y1="100" x2="616" y2="100"/><line x1="24" y1="140" x2="616" y2="140"/>
-            </g>
-            <text x="24" y="34" fill="#8FA6BA" font-family="monospace" font-size="12">CPU / hôtes actifs</text>
-            <text x="332" y="34" fill="#8FA6BA" font-family="monospace" font-size="12">Trafic réseau</text>
-            <polygon points="24,150 24,116 72,92 120,104 168,66 216,86 264,54 300,74 300,150" fill="#F5A623" opacity="0.14"/>
-            <polyline points="24,116 72,92 120,104 168,66 216,86 264,54 300,74" fill="none" stroke="#F5A623" stroke-width="2.5"/>
-            <polygon points="332,150 332,120 380,128 428,92 476,108 524,74 572,100 616,70 616,150" fill="#3DD68C" opacity="0.14"/>
-            <polyline points="332,120 380,128 428,92 476,108 524,74 572,100 616,70" fill="none" stroke="#3DD68C" stroke-width="2.5"/>
-            <g font-family="monospace">
-              <rect x="24" y="176" width="184" height="54" rx="7" fill="#10202F"/>
-              <text x="38" y="200" fill="#8FA6BA" font-size="11">HÔTES</text><text x="38" y="220" fill="#E7EDF3" font-size="17">supervisés</text>
-              <rect x="228" y="176" width="184" height="54" rx="7" fill="#10202F"/>
-              <text x="242" y="200" fill="#8FA6BA" font-size="11">ALERTES</text><text x="242" y="220" fill="#3DD68C" font-size="17">0 critique</text>
-              <rect x="432" y="176" width="184" height="54" rx="7" fill="#10202F"/>
-              <text x="446" y="200" fill="#8FA6BA" font-size="11">ÉTAT</text><text x="446" y="220" fill="#3DD68C" font-size="17">● opérationnel</text>
-            </g>
-          </svg>
-        </div>
-        <div class="case-top">
-          <span class="case-idx">04 / supervision</span>
-          <div class="case-tags"><span class="tag">Zabbix</span><span class="tag">Grafana</span><span class="tag">Linux</span></div>
-        </div>
-        <h3>Supervision d'infrastructure Zabbix + Grafana</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>Aucune supervision centralisée : pas de visibilité en temps réel sur l'état des serveurs et des services.</p></div>
-          <div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Déployé un serveur Zabbix de zéro, configuré la collecte et les seuils d'alerte, puis couplé à Grafana pour des tableaux de bord réellement lisibles.</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p>Une supervision 24/7 : détection des anomalies avant qu'elles n'impactent les utilisateurs, et des dashboards clairs, exploitables d'un coup d'œil.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-media">
-          <div class="win"><div class="dots"><i></i><i></i><i></i></div><span>nextcloud — cloud privé PGDIS</span></div>
-          <svg viewBox="0 0 640 250" role="img" aria-label="Interface Nextcloud">
-            <rect width="640" height="250" fill="#F4F6F8"/>
-            <rect width="640" height="46" fill="#0082C9"/>
-            <circle cx="30" cy="23" r="12" fill="#fff"/><text x="30" y="27" text-anchor="middle" fill="#0082C9" font-family="monospace" font-size="11" font-weight="bold">P</text>
-            <rect x="360" y="13" width="264" height="20" rx="10" fill="#ffffff" opacity="0.9"/>
-            <text x="374" y="27" fill="#9bb0c2" font-family="monospace" font-size="11">Rechercher…</text>
-            <rect x="0" y="46" width="150" height="204" fill="#EDEFF2"/>
-            <g font-family="sans-serif" font-size="12" fill="#4A5C6E">
-              <text x="20" y="82">📁 Tous les fichiers</text><text x="20" y="112">★ Favoris</text><text x="20" y="142">🕓 Récents</text><text x="20" y="172">🖉 Excalidraw</text><text x="20" y="202">🔒 Partages</text>
-            </g>
-            <g>
-              <rect x="176" y="72" width="130" height="76" rx="8" fill="#fff" stroke="#E1E6EB"/><rect x="322" y="72" width="130" height="76" rx="8" fill="#fff" stroke="#E1E6EB"/><rect x="468" y="72" width="130" height="76" rx="8" fill="#fff" stroke="#E1E6EB"/>
-              <rect x="176" y="164" width="130" height="76" rx="8" fill="#fff" stroke="#E1E6EB"/><rect x="322" y="164" width="130" height="76" rx="8" fill="#fff" stroke="#E1E6EB"/><rect x="468" y="164" width="130" height="76" rx="8" fill="#fff" stroke="#E1E6EB"/>
-              <g fill="#0082C9"><rect x="220" y="92" width="42" height="34" rx="4"/><rect x="366" y="92" width="42" height="34" rx="4"/><rect x="512" y="92" width="42" height="34" rx="4"/><rect x="220" y="184" width="42" height="34" rx="4"/><rect x="366" y="184" width="42" height="34" rx="4"/><rect x="512" y="184" width="42" height="34" rx="4"/></g>
-            </g>
-          </svg>
-        </div>
-        <div class="case-top">
-          <span class="case-idx">05 / collaboratif</span>
-          <div class="case-tags"><span class="tag">Nextcloud</span><span class="tag">Sécurité</span><span class="tag">Excalidraw</span></div>
-        </div>
-        <h3>Cloud privé Nextcloud sécurisé &amp; personnalisé</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>Besoin d'un espace collaboratif interne, hébergé et maîtrisé par l'entreprise, aux couleurs de PGDIS.</p></div>
-          <div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé Nextcloud de zéro, appliqué l'identité PGDIS (logo), durci l'ensemble de la configuration de sécurité et intégré des plugins dont Excalidraw pour concevoir les schémas d'infrastructure.</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p>Un cloud privé sécurisé et adopté en interne, qui garde la donnée sous contrôle de l'entreprise plutôt que chez un tiers.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-media">
-          <div class="win"><div class="dots"><i></i><i></i><i></i></div><span>filezilla server — ftps</span></div>
-          <svg viewBox="0 0 640 250" role="img" aria-label="Transfert de fichiers FileZilla en FTPS">
-            <rect width="640" height="250" fill="#0B1620"/>
-            <rect x="16" y="14" width="300" height="150" rx="8" fill="#10202F"/>
-            <rect x="324" y="14" width="300" height="150" rx="8" fill="#10202F"/>
-            <text x="30" y="36" fill="#8FA6BA" font-family="monospace" font-size="12">Local</text>
-            <text x="338" y="36" fill="#8FA6BA" font-family="monospace" font-size="12">Distant</text>
-            <rect x="470" y="24" width="146" height="20" rx="10" fill="#12332a"/>
-            <text x="484" y="38" fill="#3DD68C" font-family="monospace" font-size="11">🔒 FTPS chiffré</text>
-            <g font-family="monospace" font-size="11" fill="#c3d2df">
-              <text x="30" y="66">📷 produit_001.jpg</text><text x="30" y="88">📷 produit_002.jpg</text><text x="30" y="110">📷 produit_003.jpg</text><text x="30" y="132">📷 produit_004.jpg</text>
-              <text x="338" y="66">📁 /clients/photos</text><text x="338" y="88" fill="#3DD68C">↳ produit_001.jpg ✓</text><text x="338" y="110" fill="#3DD68C">↳ produit_002.jpg ✓</text><text x="338" y="132" fill="#F5A623">↳ produit_003.jpg …</text>
-            </g>
-            <rect x="16" y="178" width="608" height="56" rx="8" fill="#10202F"/>
-            <text x="30" y="200" fill="#8FA6BA" font-family="monospace" font-size="11">File d'attente</text>
-            <rect x="30" y="210" width="580" height="10" rx="5" fill="#1B2C3E"/>
-            <rect x="30" y="210" width="410" height="10" rx="5" fill="#3DD68C"/>
-          </svg>
-        </div>
-        <div class="case-top">
-          <span class="case-idx">06 / échange client</span>
-          <div class="case-tags"><span class="tag">FileZilla Server</span><span class="tag">FTPS</span><span class="tag">Chiffrement</span></div>
-        </div>
-        <h3>Portail d'import client en FTPS</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>Les clients devaient transmettre les photos des produits sans solution simple ni sécurisée.</p></div>
-          <div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Mis en place un serveur FileZilla en FTPS, avec comptes dédiés et transferts chiffrés, pour un dépôt de fichiers fiable.</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p>Un canal d'échange autonome et sécurisé pour les clients : fini les transferts bricolés, les données transitent chiffrées.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-media">
-          <div class="win"><div class="dots"><i></i><i></i><i></i></div><span>portainer — containers</span></div>
-          <svg viewBox="0 0 640 250" role="img" aria-label="Liste de conteneurs Docker dans Portainer">
-            <rect width="640" height="250" fill="#0B1620"/>
-            <rect x="0" y="0" width="640" height="40" fill="#13161C"/>
-            <circle cx="26" cy="20" r="9" fill="#13BEF9"/>
-            <text x="46" y="25" fill="#E7EDF3" font-family="monospace" font-size="13">Containers</text>
-            <text x="470" y="25" fill="#8FA6BA" font-family="monospace" font-size="12">5 running · 0 stopped</text>
-            <g font-family="monospace" font-size="12">
-              <g><rect x="16" y="56" width="608" height="30" rx="6" fill="#10202F"/><circle cx="34" cy="71" r="5" fill="#3DD68C"/><text x="50" y="75" fill="#E7EDF3">nginx-proxy-manager</text><text x="470" y="75" fill="#8FA6BA">80,443,81 → running</text></g>
-              <g><rect x="16" y="92" width="608" height="30" rx="6" fill="#10202F"/><circle cx="34" cy="107" r="5" fill="#3DD68C"/><text x="50" y="111" fill="#E7EDF3">nextcloud</text><text x="470" y="111" fill="#8FA6BA">8080 → running</text></g>
-              <g><rect x="16" y="128" width="608" height="30" rx="6" fill="#10202F"/><circle cx="34" cy="143" r="5" fill="#3DD68C"/><text x="50" y="147" fill="#E7EDF3">zabbix-server</text><text x="470" y="147" fill="#8FA6BA">10051 → running</text></g>
-              <g><rect x="16" y="164" width="608" height="30" rx="6" fill="#10202F"/><circle cx="34" cy="179" r="5" fill="#3DD68C"/><text x="50" y="183" fill="#E7EDF3">grafana</text><text x="470" y="183" fill="#8FA6BA">3000 → running</text></g>
-              <g><rect x="16" y="200" width="608" height="30" rx="6" fill="#10202F"/><circle cx="34" cy="215" r="5" fill="#3DD68C"/><text x="50" y="219" fill="#E7EDF3">meshcentral</text><text x="470" y="219" fill="#8FA6BA">4430 → running</text></g>
-            </g>
-          </svg>
-        </div>
-        <div class="case-top">
-          <span class="case-idx">07 / conteneurs</span>
-          <div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">Docker</span><span class="tag">Portainer</span><span class="tag">Nginx Proxy Manager</span></div>
-        </div>
-        <h3>Plateforme de conteneurs pilotée par Portainer</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>Besoin de déployer et gérer facilement plusieurs services sur un même serveur.</p></div>
-          <div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis Docker et Portainer pour administrer les conteneurs. J'ai ensuite déployé plusieurs stacks Docker, dont Nginx Proxy Manager pour gérer les reverse proxies et les certificats.</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p>Une plateforme de conteneurs administrable et maîtrisée en interne, facilitant le déploiement, l'isolation et la maintenance des services.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-media">
-          <div class="win"><div class="dots"><i></i><i></i><i></i></div><span>meshcentral — my devices</span></div>
-          <svg viewBox="0 0 640 250" role="img" aria-label="Parc de postes gérés à distance dans MeshCentral">
-            <rect width="640" height="250" fill="#0B1620"/>
-            <text x="20" y="30" fill="#8FA6BA" font-family="monospace" font-size="12">Postes — prise en main à distance</text>
-            <g font-family="monospace" font-size="12">
-              <g><rect x="16" y="46" width="296" height="88" rx="8" fill="#10202F"/><rect x="30" y="60" width="120" height="60" rx="4" fill="#0B1620" stroke="#1B2C3E"/><circle cx="42" cy="72" r="4" fill="#3DD68C"/><text x="164" y="76" fill="#E7EDF3">PC-BUREAU-01</text><text x="164" y="98" fill="#3DD68C">● en ligne</text><text x="164" y="118" fill="#8FA6BA">Windows 11</text></g>
-              <g><rect x="328" y="46" width="296" height="88" rx="8" fill="#10202F"/><rect x="342" y="60" width="120" height="60" rx="4" fill="#0B1620" stroke="#1B2C3E"/><circle cx="354" cy="72" r="4" fill="#3DD68C"/><text x="476" y="76" fill="#E7EDF3">PC-ATELIER-04</text><text x="476" y="98" fill="#3DD68C">● en ligne</text><text x="476" y="118" fill="#8FA6BA">Windows 10</text></g>
-            </g>
-            <rect x="16" y="150" width="608" height="84" rx="8" fill="#10202F"/>
-            <text x="30" y="174" fill="#8FA6BA" font-family="monospace" font-size="11">Session distante active</text>
-            <rect x="30" y="184" width="150" height="40" rx="4" fill="#0B1620" stroke="#1B2C3E"/>
-            <text x="196" y="200" fill="#E7EDF3" font-family="monospace" font-size="12">Auto-hébergé chez PGDIS</text>
-            <text x="196" y="220" fill="#3DD68C" font-family="monospace" font-size="12">0 € d'abonnement · accès interne</text>
-          </svg>
-        </div>
-        <div class="case-top">
-          <span class="case-idx">08 / télémaintenance</span>
-          <div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">MeshCentral</span><span class="tag">Auto-hébergé</span><span class="tag">Prise en main à distance</span></div>
-        </div>
-        <h3>Serveur MeshCentral en remplacement de TeamViewer</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>La prise en main des postes à distance reposait sur TeamViewer, avec un abonnement récurrent et des accès hébergés à l'extérieur.</p></div>
-          <div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis déployé MeshCentral en interne chez PGDIS : une alternative auto-hébergée pour contrôler l'ensemble des postes à distance.</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p>Une télémaintenance sans abonnement et sous contrôle de l'entreprise : un coût récurrent supprimé et des accès qui restent en interne.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-media">
-          <div class="win"><div class="dots"><i></i><i></i><i></i></div><span>baie serveur — câble management</span></div>
-          <svg viewBox="0 0 640 250" role="img" aria-label="Baie serveur au câblage organisé">
-            <rect width="640" height="250" fill="#0B1620"/>
-            <rect x="230" y="16" width="180" height="218" rx="6" fill="#10202F" stroke="#1B2C3E" stroke-width="2"/>
-            <g>
-              <rect x="244" y="28" width="152" height="20" rx="3" fill="#16283A"/><circle cx="256" cy="38" r="3" fill="#3DD68C"/><circle cx="268" cy="38" r="3" fill="#3DD68C"/>
-              <rect x="244" y="54" width="152" height="20" rx="3" fill="#16283A"/><circle cx="256" cy="64" r="3" fill="#3DD68C"/><circle cx="268" cy="64" r="3" fill="#F5A623"/>
-              <rect x="244" y="80" width="152" height="14" rx="3" fill="#0E1B2B"/>
-              <g>
-                <rect x="244" y="100" width="152" height="16" rx="3" fill="#16283A"/>
-                <rect x="250" y="104" width="8" height="8" rx="2" fill="#3DD68C"/><rect x="262" y="104" width="8" height="8" rx="2" fill="#3DD68C"/><rect x="274" y="104" width="8" height="8" rx="2" fill="#3DD68C"/><rect x="286" y="104" width="8" height="8" rx="2" fill="#3DD68C"/><rect x="298" y="104" width="8" height="8" rx="2" fill="#3DD68C"/><rect x="310" y="104" width="8" height="8" rx="2" fill="#3DD68C"/>
-              </g>
-              <rect x="244" y="122" width="152" height="26" rx="3" fill="#16283A"/><circle cx="258" cy="135" r="4" fill="#8FA6BA"/><circle cx="274" cy="135" r="4" fill="#8FA6BA"/>
-              <rect x="244" y="154" width="152" height="26" rx="3" fill="#16283A"/>
-              <rect x="244" y="186" width="152" height="34" rx="3" fill="#16283A"/><circle cx="372" cy="203" r="6" fill="#3DD68C"/>
-            </g>
-            <g fill="none" stroke-width="3" opacity="0.85">
-              <path d="M410 108 C 470 108 470 60 500 60" stroke="#3DD68C"/>
-              <path d="M410 108 C 470 108 470 90 500 90" stroke="#F5A623"/>
-              <path d="M410 108 C 470 108 470 120 500 120" stroke="#13BEF9"/>
-              <path d="M410 108 C 470 108 470 150 500 150" stroke="#8FA6BA"/>
-            </g>
-            <line x1="500" y1="52" x2="500" y2="160" stroke="#1B2C3E" stroke-width="6" stroke-linecap="round"/>
-            <text x="516" y="100" fill="#8FA6BA" font-family="monospace" font-size="12">câblage</text>
-            <text x="516" y="118" fill="#8FA6BA" font-family="monospace" font-size="12">repéré &amp; rangé</text>
-          </svg>
-        </div>
-        <div class="case-top">
-          <span class="case-idx">09 / datacenter</span>
-          <div class="case-tags"><span class="tag">Baie serveur</span><span class="tag">Câble management</span></div>
-        </div>
-        <h3>Refonte du câblage de la baie serveur</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>Baie au câblage désordonné, compliquant chaque maintenance et intervention.</p></div>
-          <div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Repensé et refait entièrement le câble management de la baie, du repérage à la mise au propre.</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p>Une baie propre et lisible : interventions plus rapides, diagnostic facilité, meilleure circulation d'air et fiabilité.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-media">
-          <div class="win"><div class="dots"><i></i><i></i><i></i></div><span>docuseal — signature horodatée</span></div>
-          <svg viewBox="0 0 640 250" role="img" aria-label="Signature électronique de PDF horodatée avec DocuSeal">
-            <rect width="640" height="250" fill="#0B1620"/>
-            <rect x="40" y="24" width="300" height="202" rx="6" fill="#F4F6F8"/>
-            <g fill="#C9D2DB"><rect x="64" y="48" width="180" height="9" rx="4"/><rect x="64" y="68" width="252" height="7" rx="3"/><rect x="64" y="82" width="240" height="7" rx="3"/><rect x="64" y="96" width="248" height="7" rx="3"/><rect x="64" y="110" width="180" height="7" rx="3"/></g>
-            <rect x="64" y="150" width="252" height="56" rx="6" fill="#fff" stroke="#3DD68C" stroke-width="1.5"/>
-            <text x="76" y="170" fill="#4A5C6E" font-family="monospace" font-size="10">Signature</text>
-            <path d="M80 194 q 14 -20 28 0 t 28 0 q 10 -14 22 -2" fill="none" stroke="#0C1A2B" stroke-width="2"/>
-            <circle cx="296" cy="178" r="13" fill="#3DD68C"/><path d="M290 178 l4 4 l8 -9" fill="none" stroke="#fff" stroke-width="2.5"/>
-            <rect x="372" y="60" width="228" height="130" rx="10" fill="#10202F" stroke="#1B2C3E"/>
-            <circle cx="416" cy="100" r="20" fill="none" stroke="#F5A623" stroke-width="2.5"/><line x1="416" y1="100" x2="416" y2="86" stroke="#F5A623" stroke-width="2.5"/><line x1="416" y1="100" x2="427" y2="106" stroke="#F5A623" stroke-width="2.5"/>
-            <text x="448" y="96" fill="#E7EDF3" font-family="monospace" font-size="12">Horodaté</text>
-            <text x="448" y="114" fill="#8FA6BA" font-family="monospace" font-size="11">source officielle</text>
-            <text x="396" y="156" fill="#3DD68C" font-family="monospace" font-size="12">● valeur probante</text>
-            <text x="396" y="176" fill="#8FA6BA" font-family="monospace" font-size="11">date certaine garantie</text>
-          </svg>
-        </div>
-        <div class="case-top">
-          <span class="case-idx">10 / signature électronique</span>
-          <div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">DocuSeal</span><span class="tag">Signature PDF</span><span class="tag">Horodatage</span><span class="tag">Auto-hébergé</span></div>
-        </div>
-        <h3>Signature électronique horodatée avec DocuSeal</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>Besoin de faire signer des PDF avec une vraie valeur probante et une date certaine, sans passer par un service tiers payant.</p></div>
-          <div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis déployé DocuSeal en auto-hébergement pour la signature électronique de PDF, relié à un service d'horodatage officiel afin de dater chaque signature de manière certaine.</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p>Un circuit de signature interne, sécurisé et horodaté : des documents à valeur probante, produits en interne et sous contrôle.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-media">
-          <div class="win"><div class="dots"><i></i><i></i><i></i></div><span>prestashop — boutique en ligne</span></div>
-          <svg viewBox="0 0 640 250" role="img" aria-label="Boutique PrestaShop sécurisée avec modules transporteurs">
-            <rect width="640" height="250" fill="#0B1620"/>
-            <rect x="0" y="0" width="640" height="38" fill="#10202F"/>
-            <circle cx="24" cy="19" r="7" fill="#3DD68C"/><text x="40" y="24" fill="#3DD68C" font-family="monospace" font-size="11">🔒 https</text>
-            <text x="150" y="24" fill="#E7EDF3" font-family="monospace" font-size="12">boutique PGDIS</text>
-            <text x="470" y="24" fill="#8FA6BA" font-family="monospace" font-size="11">panier · commande</text>
-            <g>
-              <rect x="16" y="54" width="132" height="96" rx="8" fill="#10202F"/><rect x="32" y="68" width="100" height="52" rx="4" fill="#16283A"/><rect x="32" y="128" width="70" height="8" rx="4" fill="#3a5064"/>
-              <rect x="160" y="54" width="132" height="96" rx="8" fill="#10202F"/><rect x="176" y="68" width="100" height="52" rx="4" fill="#16283A"/><rect x="176" y="128" width="70" height="8" rx="4" fill="#3a5064"/>
-              <rect x="304" y="54" width="132" height="96" rx="8" fill="#10202F"/><rect x="320" y="68" width="100" height="52" rx="4" fill="#16283A"/><rect x="320" y="128" width="70" height="8" rx="4" fill="#3a5064"/>
-            </g>
-            <rect x="452" y="54" width="172" height="180" rx="8" fill="#10202F"/>
-            <text x="468" y="78" fill="#8FA6BA" font-family="monospace" font-size="11">Livraison</text>
-            <rect x="468" y="90" width="140" height="40" rx="6" fill="#0B1620" stroke="#3DD68C"/><circle cx="484" cy="110" r="6" fill="none" stroke="#3DD68C" stroke-width="2"/><circle cx="484" cy="110" r="3" fill="#3DD68C"/><text x="500" y="114" fill="#E7EDF3" font-family="monospace" font-size="11">Chronopost</text>
-            <rect x="468" y="138" width="140" height="40" rx="6" fill="#0B1620" stroke="#1B2C3E"/><circle cx="484" cy="158" r="6" fill="none" stroke="#8FA6BA" stroke-width="2"/><text x="500" y="162" fill="#E7EDF3" font-family="monospace" font-size="11">Mondial Relay</text>
-            <text x="468" y="204" fill="#8FA6BA" font-family="monospace" font-size="10">+ points relais</text>
-            <text x="468" y="222" fill="#3DD68C" font-family="monospace" font-size="11">● sécurisée</text>
-            <rect x="16" y="164" width="420" height="70" rx="8" fill="#10202F"/>
-            <text x="32" y="188" fill="#8FA6BA" font-family="monospace" font-size="11">Tunnel de commande</text>
-            <g fill="#3DD68C" font-family="monospace" font-size="11"><text x="32" y="210">✓ panier</text><text x="120" y="210">✓ livraison</text><text x="230" y="210">✓ paiement</text><text x="340" y="210">✓ confirmé</text></g>
-          </svg>
-        </div>
-        <div class="case-top">
-          <span class="case-idx">11 / e-commerce</span>
-          <div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">PrestaShop</span><span class="tag">Sécurisation</span><span class="tag">Chronopost</span><span class="tag">Mondial Relay</span></div>
-        </div>
-        <h3>Boutique PrestaShop montée et sécurisée de A à Z</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>Besoin d'une boutique en ligne complète, maîtrisée en interne et prête pour l'expédition.</p></div>
-          <div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis déployé et configuré PrestaShop de A à Z, avec sécurisation de l’environnement et intégration des modules transporteurs (Chronopost, Mondial Relay, points relais…).</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p>Une boutique opérationnelle et sécurisée, avec expédition et points relais intégrés directement au tunnel de commande.</p></div>
-        </div>
-      </article>
-
-      <article class="case reveal">
-        <div class="case-top">
-          <span class="case-idx">12 / gestion de parc</span>
-          <div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">GLPI</span><span class="tag">Gestion de parc</span><span class="tag">Support</span></div>
-        </div>
-        <h3>Serveur GLPI monté de zéro</h3>
-        <div class="case-body">
-          <div class="case-col"><div class="lab">Contexte</div><p>Il n’existait pas de serveur GLPI pour centraliser la gestion du parc et les besoins de support.</p></div>
-          <div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis déployé et configuré GLPI pour disposer d’un outil central de gestion du parc informatique et du support.</p></div>
-          <div class="case-col result"><div class="lab">Résultat</div><p>Une base GLPI opérationnelle et maîtrisée en interne, offrant un point central pour suivre le parc et structurer le support.</p></div>
-        </div>
-      </article>
-    </div>
-  </div>
+<section class="ink" id="realisations">
+<div class="wrap">
+<div class="section-head reveal">
+<span class="eyebrow">Réalisations</span>
+<h2>Des infrastructures montées de zéro, chez PGDIS</h2>
+<p>Pas des cases cochées : des serveurs conçus, sécurisés et mis en production, avec un besoin réel derrière chacun.</p>
+</div>
+<div class="cases">
+<article class="case reveal">
+<div class="case-top">
+<span class="case-idx">01 / continuité d’activité</span>
+<div class="case-tags"><span class="tag">Veeam</span><span class="tag">Sauvegarde</span><span class="tag">Restauration</span><span class="tag">PRA</span></div>
+</div>
+<h3>Reprise après incident : entreprise relancée en moins de 48 h</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Enjeu</div><p>Après un incident majeur, l’objectif était de restaurer les systèmes et les données suffisamment vite pour permettre la reprise de l’activité.</p></div>
+<div class="case-col"><div class="lab">Notre intervention</div><p>Gestion et exploitation des sauvegardes Veeam, puis restauration des systèmes et données nécessaires à la reprise de l’entreprise.</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p><strong>Activité relancée en moins de 48 h</strong>, avec une perte de données limitée à environ <strong>6 heures</strong>.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-top">
+<span class="case-idx">02 / identité &amp; accès</span>
+<div class="case-tags"><span class="tag">Active Directory</span><span class="tag">Groupes</span><span class="tag">Droits</span><span class="tag">Windows Server</span></div>
+</div>
+<h3>Refonte de l’Active Directory et des droits d’accès</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>L’Active Directory reposait principalement sur des comptes utilisateurs, sans structuration suffisante par groupes et droits.</p></div>
+<div class="case-col"><div class="lab">Notre intervention</div><p>Refonte de l’organisation de l’AD avec mise en place d’une gestion structurée des groupes et des droits d’accès.</p></div>
+<div class="case-col result"><div class="lab">Apport</div><p>Une administration des accès plus claire, plus cohérente et plus simple à maintenir au quotidien.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-top">
+<span class="case-idx">03 / Microsoft 365</span>
+<div class="case-tags"><span class="tag">Microsoft 365</span><span class="tag">SharePoint Online</span><span class="tag">Tenant</span><span class="tag">Droits</span></div>
+</div>
+<h3>Administration du tenant Microsoft 365 &amp; SharePoint</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Périmètre</div><p>Administration courante du tenant Microsoft 365 et des espaces collaboratifs SharePoint Online.</p></div>
+<div class="case-col"><div class="lab">Ce que j’ai géré</div><p>Création et suppression d’utilisateurs, gestion des droits et accès, ainsi que création et suppression de sites SharePoint.</p></div>
+<div class="case-col result"><div class="lab">Apport</div><p>Gestion centralisée des identités, des accès et des espaces de partage documentaire de l’entreprise.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-media">
+<div class="win" style="position:relative!important;display:block!important;width:100%!important;height:40px!important;min-height:40px!important;box-sizing:border-box!important;overflow:hidden!important;"><div class="dots" style="position:absolute!important;left:14px!important;top:50%!important;transform:translateY(-50%)!important;z-index:2!important;display:flex!important;"><i></i><i></i><i></i></div><span style="position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;display:block!important;width:max-content!important;max-width:calc(100% - 100px)!important;margin:0!important;padding:0!important;box-sizing:border-box!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;z-index:1!important;">grafana — supervision PGDIS</span></div>
+<svg aria-label="Dashboard de supervision Grafana" role="img" viewbox="0 0 640 250">
+<rect fill="#0B1620" height="250" width="640"></rect>
+<g stroke="#1B2C3E" stroke-width="1">
+<line x1="24" x2="616" y1="60" y2="60"></line><line x1="24" x2="616" y1="100" y2="100"></line><line x1="24" x2="616" y1="140" y2="140"></line>
+</g>
+<text fill="#8FA6BA" font-family="monospace" font-size="12" x="24" y="34">CPU / hôtes actifs</text>
+<text fill="#8FA6BA" font-family="monospace" font-size="12" x="332" y="34">Trafic réseau</text>
+<polygon fill="#F5A623" opacity="0.14" points="24,150 24,116 72,92 120,104 168,66 216,86 264,54 300,74 300,150"></polygon>
+<polyline fill="none" points="24,116 72,92 120,104 168,66 216,86 264,54 300,74" stroke="#F5A623" stroke-width="2.5"></polyline>
+<polygon fill="#3DD68C" opacity="0.14" points="332,150 332,120 380,128 428,92 476,108 524,74 572,100 616,70 616,150"></polygon>
+<polyline fill="none" points="332,120 380,128 428,92 476,108 524,74 572,100 616,70" stroke="#3DD68C" stroke-width="2.5"></polyline>
+<g font-family="monospace">
+<rect fill="#10202F" height="54" rx="7" width="184" x="24" y="176"></rect>
+<text fill="#8FA6BA" font-size="11" x="38" y="200">HÔTES</text><text fill="#E7EDF3" font-size="17" x="38" y="220">supervisés</text>
+<rect fill="#10202F" height="54" rx="7" width="184" x="228" y="176"></rect>
+<text fill="#8FA6BA" font-size="11" x="242" y="200">ALERTES</text><text fill="#3DD68C" font-size="17" x="242" y="220">0 critique</text>
+<rect fill="#10202F" height="54" rx="7" width="184" x="432" y="176"></rect>
+<text fill="#8FA6BA" font-size="11" x="446" y="200">ÉTAT</text><text fill="#3DD68C" font-size="17" x="446" y="220">● opérationnel</text>
+</g>
+</svg>
+</div>
+<div class="case-top">
+<span class="case-idx">04 / supervision</span>
+<div class="case-tags"><span class="tag">Zabbix</span><span class="tag">Grafana</span><span class="tag">Linux</span></div>
+</div>
+<h3>Supervision d'infrastructure Zabbix + Grafana</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>Aucune supervision centralisée : pas de visibilité en temps réel sur l'état des serveurs et des services.</p></div>
+<div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Déployé un serveur Zabbix de zéro, configuré la collecte et les seuils d'alerte, puis couplé à Grafana pour des tableaux de bord réellement lisibles.</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p>Une supervision 24/7 : détection des anomalies avant qu'elles n'impactent les utilisateurs, et des dashboards clairs, exploitables d'un coup d'œil.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-media">
+<div class="win" style="position:relative!important;display:block!important;width:100%!important;height:40px!important;min-height:40px!important;box-sizing:border-box!important;overflow:hidden!important;"><div class="dots" style="position:absolute!important;left:14px!important;top:50%!important;transform:translateY(-50%)!important;z-index:2!important;display:flex!important;"><i></i><i></i><i></i></div><span style="position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;display:block!important;width:max-content!important;max-width:calc(100% - 100px)!important;margin:0!important;padding:0!important;box-sizing:border-box!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;z-index:1!important;">nextcloud — cloud privé PGDIS</span></div>
+<svg aria-label="Interface Nextcloud" role="img" viewbox="0 0 640 250">
+<rect fill="#F4F6F8" height="250" width="640"></rect>
+<rect fill="#0082C9" height="46" width="640"></rect>
+<circle cx="30" cy="23" fill="#fff" r="12"></circle><text fill="#0082C9" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle" x="30" y="27">P</text>
+<rect fill="#ffffff" height="20" opacity="0.9" rx="10" width="264" x="360" y="13"></rect>
+<text fill="#9bb0c2" font-family="monospace" font-size="11" x="374" y="27">Rechercher…</text>
+<rect fill="#EDEFF2" height="204" width="150" x="0" y="46"></rect>
+<g fill="#4A5C6E" font-family="sans-serif" font-size="12">
+<text x="20" y="82">📁 Tous les fichiers</text><text x="20" y="112">★ Favoris</text><text x="20" y="142">🕓 Récents</text><text x="20" y="172">🖉 Excalidraw</text><text x="20" y="202">🔒 Partages</text>
+</g>
+<g>
+<rect fill="#fff" height="76" rx="8" stroke="#E1E6EB" width="130" x="176" y="72"></rect><rect fill="#fff" height="76" rx="8" stroke="#E1E6EB" width="130" x="322" y="72"></rect><rect fill="#fff" height="76" rx="8" stroke="#E1E6EB" width="130" x="468" y="72"></rect>
+<rect fill="#fff" height="76" rx="8" stroke="#E1E6EB" width="130" x="176" y="164"></rect><rect fill="#fff" height="76" rx="8" stroke="#E1E6EB" width="130" x="322" y="164"></rect><rect fill="#fff" height="76" rx="8" stroke="#E1E6EB" width="130" x="468" y="164"></rect>
+<g fill="#0082C9"><rect height="34" rx="4" width="42" x="220" y="92"></rect><rect height="34" rx="4" width="42" x="366" y="92"></rect><rect height="34" rx="4" width="42" x="512" y="92"></rect><rect height="34" rx="4" width="42" x="220" y="184"></rect><rect height="34" rx="4" width="42" x="366" y="184"></rect><rect height="34" rx="4" width="42" x="512" y="184"></rect></g>
+</g>
+</svg>
+</div>
+<div class="case-top">
+<span class="case-idx">05 / collaboratif</span>
+<div class="case-tags"><span class="tag">Nextcloud</span><span class="tag">Sécurité</span><span class="tag">Excalidraw</span></div>
+</div>
+<h3>Cloud privé Nextcloud sécurisé &amp; personnalisé</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>Besoin d'un espace collaboratif interne, hébergé et maîtrisé par l'entreprise, aux couleurs de PGDIS.</p></div>
+<div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé Nextcloud de zéro, appliqué l'identité PGDIS (logo), durci l'ensemble de la configuration de sécurité et intégré des plugins dont Excalidraw pour concevoir les schémas d'infrastructure.</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p>Un cloud privé sécurisé et adopté en interne, qui garde la donnée sous contrôle de l'entreprise plutôt que chez un tiers.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-media">
+<div class="win" style="position:relative!important;display:block!important;width:100%!important;height:40px!important;min-height:40px!important;box-sizing:border-box!important;overflow:hidden!important;"><div class="dots" style="position:absolute!important;left:14px!important;top:50%!important;transform:translateY(-50%)!important;z-index:2!important;display:flex!important;"><i></i><i></i><i></i></div><span style="position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;display:block!important;width:max-content!important;max-width:calc(100% - 100px)!important;margin:0!important;padding:0!important;box-sizing:border-box!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;z-index:1!important;">filezilla server — ftps</span></div>
+<svg aria-label="Transfert de fichiers FileZilla en FTPS" role="img" viewbox="0 0 640 250">
+<rect fill="#0B1620" height="250" width="640"></rect>
+<rect fill="#10202F" height="150" rx="8" width="300" x="16" y="14"></rect>
+<rect fill="#10202F" height="150" rx="8" width="300" x="324" y="14"></rect>
+<text fill="#8FA6BA" font-family="monospace" font-size="12" x="30" y="36">Local</text>
+<text fill="#8FA6BA" font-family="monospace" font-size="12" x="338" y="36">Distant</text>
+<rect fill="#12332a" height="20" rx="10" width="146" x="470" y="24"></rect>
+<text fill="#3DD68C" font-family="monospace" font-size="11" x="484" y="38">🔒 FTPS chiffré</text>
+<g fill="#c3d2df" font-family="monospace" font-size="11">
+<text x="30" y="66">📷 produit_001.jpg</text><text x="30" y="88">📷 produit_002.jpg</text><text x="30" y="110">📷 produit_003.jpg</text><text x="30" y="132">📷 produit_004.jpg</text>
+<text x="338" y="66">📁 /clients/photos</text><text fill="#3DD68C" x="338" y="88">↳ produit_001.jpg ✓</text><text fill="#3DD68C" x="338" y="110">↳ produit_002.jpg ✓</text><text fill="#F5A623" x="338" y="132">↳ produit_003.jpg …</text>
+</g>
+<rect fill="#10202F" height="56" rx="8" width="608" x="16" y="178"></rect>
+<text fill="#8FA6BA" font-family="monospace" font-size="11" x="30" y="200">File d'attente</text>
+<rect fill="#1B2C3E" height="10" rx="5" width="580" x="30" y="210"></rect>
+<rect fill="#3DD68C" height="10" rx="5" width="410" x="30" y="210"></rect>
+</svg>
+</div>
+<div class="case-top">
+<span class="case-idx">06 / échange client</span>
+<div class="case-tags"><span class="tag">FileZilla Server</span><span class="tag">FTPS</span><span class="tag">Chiffrement</span></div>
+</div>
+<h3>Portail d'import client en FTPS</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>Les clients devaient transmettre les photos des produits sans solution simple ni sécurisée.</p></div>
+<div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Mis en place un serveur FileZilla en FTPS, avec comptes dédiés et transferts chiffrés, pour un dépôt de fichiers fiable.</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p>Un canal d'échange autonome et sécurisé pour les clients : fini les transferts bricolés, les données transitent chiffrées.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-media">
+<div class="win" style="position:relative!important;display:block!important;width:100%!important;height:40px!important;min-height:40px!important;box-sizing:border-box!important;overflow:hidden!important;"><div class="dots" style="position:absolute!important;left:14px!important;top:50%!important;transform:translateY(-50%)!important;z-index:2!important;display:flex!important;"><i></i><i></i><i></i></div><span style="position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;display:block!important;width:max-content!important;max-width:calc(100% - 100px)!important;margin:0!important;padding:0!important;box-sizing:border-box!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;z-index:1!important;">portainer — containers</span></div>
+<svg aria-label="Liste de conteneurs Docker dans Portainer" role="img" viewbox="0 0 640 250">
+<rect fill="#0B1620" height="250" width="640"></rect>
+<rect fill="#13161C" height="40" width="640" x="0" y="0"></rect>
+<circle cx="26" cy="20" fill="#13BEF9" r="9"></circle>
+<text fill="#E7EDF3" font-family="monospace" font-size="13" x="46" y="25">Containers</text>
+<text fill="#8FA6BA" font-family="monospace" font-size="12" x="470" y="25">5 running · 0 stopped</text>
+<g font-family="monospace" font-size="12">
+<g><rect fill="#10202F" height="30" rx="6" width="608" x="16" y="56"></rect><circle cx="34" cy="71" fill="#3DD68C" r="5"></circle><text fill="#E7EDF3" x="50" y="75">nginx-proxy-manager</text><text fill="#8FA6BA" x="470" y="75">80,443,81 → running</text></g>
+<g><rect fill="#10202F" height="30" rx="6" width="608" x="16" y="92"></rect><circle cx="34" cy="107" fill="#3DD68C" r="5"></circle><text fill="#E7EDF3" x="50" y="111">nextcloud</text><text fill="#8FA6BA" x="470" y="111">8080 → running</text></g>
+<g><rect fill="#10202F" height="30" rx="6" width="608" x="16" y="128"></rect><circle cx="34" cy="143" fill="#3DD68C" r="5"></circle><text fill="#E7EDF3" x="50" y="147">zabbix-server</text><text fill="#8FA6BA" x="470" y="147">10051 → running</text></g>
+<g><rect fill="#10202F" height="30" rx="6" width="608" x="16" y="164"></rect><circle cx="34" cy="179" fill="#3DD68C" r="5"></circle><text fill="#E7EDF3" x="50" y="183">grafana</text><text fill="#8FA6BA" x="470" y="183">3000 → running</text></g>
+<g><rect fill="#10202F" height="30" rx="6" width="608" x="16" y="200"></rect><circle cx="34" cy="215" fill="#3DD68C" r="5"></circle><text fill="#E7EDF3" x="50" y="219">meshcentral</text><text fill="#8FA6BA" x="470" y="219">4430 → running</text></g>
+</g>
+</svg>
+</div>
+<div class="case-top">
+<span class="case-idx">07 / conteneurs</span>
+<div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">Docker</span><span class="tag">Portainer</span><span class="tag">Nginx Proxy Manager</span></div>
+</div>
+<h3>Plateforme de conteneurs pilotée par Portainer</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>Besoin de déployer et gérer facilement plusieurs services sur un même serveur.</p></div>
+<div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis Docker et Portainer pour administrer les conteneurs. J'ai ensuite déployé plusieurs stacks Docker, dont Nginx Proxy Manager pour gérer les reverse proxies et les certificats.</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p>Une plateforme de conteneurs administrable et maîtrisée en interne, facilitant le déploiement, l'isolation et la maintenance des services.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-media">
+<div class="win" style="position:relative!important;display:block!important;width:100%!important;height:40px!important;min-height:40px!important;box-sizing:border-box!important;overflow:hidden!important;"><div class="dots" style="position:absolute!important;left:14px!important;top:50%!important;transform:translateY(-50%)!important;z-index:2!important;display:flex!important;"><i></i><i></i><i></i></div><span style="position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;display:block!important;width:max-content!important;max-width:calc(100% - 100px)!important;margin:0!important;padding:0!important;box-sizing:border-box!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;z-index:1!important;">meshcentral — my devices</span></div>
+<svg aria-label="Parc de postes gérés à distance dans MeshCentral" role="img" viewbox="0 0 640 250">
+<rect fill="#0B1620" height="250" width="640"></rect>
+<text fill="#8FA6BA" font-family="monospace" font-size="12" x="20" y="30">Postes — prise en main à distance</text>
+<g font-family="monospace" font-size="12">
+<g><rect fill="#10202F" height="88" rx="8" width="296" x="16" y="46"></rect><rect fill="#0B1620" height="60" rx="4" stroke="#1B2C3E" width="120" x="30" y="60"></rect><circle cx="42" cy="72" fill="#3DD68C" r="4"></circle><text fill="#E7EDF3" x="164" y="76">PC-BUREAU-01</text><text fill="#3DD68C" x="164" y="98">● en ligne</text><text fill="#8FA6BA" x="164" y="118">Windows 11</text></g>
+<g><rect fill="#10202F" height="88" rx="8" width="296" x="328" y="46"></rect><rect fill="#0B1620" height="60" rx="4" stroke="#1B2C3E" width="120" x="342" y="60"></rect><circle cx="354" cy="72" fill="#3DD68C" r="4"></circle><text fill="#E7EDF3" x="476" y="76">PC-ATELIER-04</text><text fill="#3DD68C" x="476" y="98">● en ligne</text><text fill="#8FA6BA" x="476" y="118">Windows 10</text></g>
+</g>
+<rect fill="#10202F" height="84" rx="8" width="608" x="16" y="150"></rect>
+<text fill="#8FA6BA" font-family="monospace" font-size="11" x="30" y="174">Session distante active</text>
+<rect fill="#0B1620" height="40" rx="4" stroke="#1B2C3E" width="150" x="30" y="184"></rect>
+<text fill="#E7EDF3" font-family="monospace" font-size="12" x="196" y="200">Auto-hébergé chez PGDIS</text>
+<text fill="#3DD68C" font-family="monospace" font-size="12" x="196" y="220">0 € d'abonnement · accès interne</text>
+</svg>
+</div>
+<div class="case-top">
+<span class="case-idx">08 / télémaintenance</span>
+<div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">MeshCentral</span><span class="tag">Auto-hébergé</span><span class="tag">Prise en main à distance</span></div>
+</div>
+<h3>Serveur MeshCentral en remplacement de TeamViewer</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>La prise en main des postes à distance reposait sur TeamViewer, avec un abonnement récurrent et des accès hébergés à l'extérieur.</p></div>
+<div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis déployé MeshCentral en interne chez PGDIS : une alternative auto-hébergée pour contrôler l'ensemble des postes à distance.</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p>Une télémaintenance sans abonnement et sous contrôle de l'entreprise : un coût récurrent supprimé et des accès qui restent en interne.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-media">
+<div class="win" style="position:relative!important;display:block!important;width:100%!important;height:40px!important;min-height:40px!important;box-sizing:border-box!important;overflow:hidden!important;"><div class="dots" style="position:absolute!important;left:14px!important;top:50%!important;transform:translateY(-50%)!important;z-index:2!important;display:flex!important;"><i></i><i></i><i></i></div><span style="position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;display:block!important;width:max-content!important;max-width:calc(100% - 100px)!important;margin:0!important;padding:0!important;box-sizing:border-box!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;z-index:1!important;">baie serveur — câble management</span></div>
+<svg aria-label="Baie serveur au câblage organisé" role="img" viewbox="0 0 640 250">
+<rect fill="#0B1620" height="250" width="640"></rect>
+<rect fill="#10202F" height="218" rx="6" stroke="#1B2C3E" stroke-width="2" width="180" x="230" y="16"></rect>
+<g>
+<rect fill="#16283A" height="20" rx="3" width="152" x="244" y="28"></rect><circle cx="256" cy="38" fill="#3DD68C" r="3"></circle><circle cx="268" cy="38" fill="#3DD68C" r="3"></circle>
+<rect fill="#16283A" height="20" rx="3" width="152" x="244" y="54"></rect><circle cx="256" cy="64" fill="#3DD68C" r="3"></circle><circle cx="268" cy="64" fill="#F5A623" r="3"></circle>
+<rect fill="#0E1B2B" height="14" rx="3" width="152" x="244" y="80"></rect>
+<g>
+<rect fill="#16283A" height="16" rx="3" width="152" x="244" y="100"></rect>
+<rect fill="#3DD68C" height="8" rx="2" width="8" x="250" y="104"></rect><rect fill="#3DD68C" height="8" rx="2" width="8" x="262" y="104"></rect><rect fill="#3DD68C" height="8" rx="2" width="8" x="274" y="104"></rect><rect fill="#3DD68C" height="8" rx="2" width="8" x="286" y="104"></rect><rect fill="#3DD68C" height="8" rx="2" width="8" x="298" y="104"></rect><rect fill="#3DD68C" height="8" rx="2" width="8" x="310" y="104"></rect>
+</g>
+<rect fill="#16283A" height="26" rx="3" width="152" x="244" y="122"></rect><circle cx="258" cy="135" fill="#8FA6BA" r="4"></circle><circle cx="274" cy="135" fill="#8FA6BA" r="4"></circle>
+<rect fill="#16283A" height="26" rx="3" width="152" x="244" y="154"></rect>
+<rect fill="#16283A" height="34" rx="3" width="152" x="244" y="186"></rect><circle cx="372" cy="203" fill="#3DD68C" r="6"></circle>
+</g>
+<g fill="none" opacity="0.85" stroke-width="3">
+<path d="M410 108 C 470 108 470 60 500 60" stroke="#3DD68C"></path>
+<path d="M410 108 C 470 108 470 90 500 90" stroke="#F5A623"></path>
+<path d="M410 108 C 470 108 470 120 500 120" stroke="#13BEF9"></path>
+<path d="M410 108 C 470 108 470 150 500 150" stroke="#8FA6BA"></path>
+</g>
+<line stroke="#1B2C3E" stroke-linecap="round" stroke-width="6" x1="500" x2="500" y1="52" y2="160"></line>
+<text fill="#8FA6BA" font-family="monospace" font-size="12" x="516" y="100">câblage</text>
+<text fill="#8FA6BA" font-family="monospace" font-size="12" x="516" y="118">repéré &amp; rangé</text>
+</svg>
+</div>
+<div class="case-top">
+<span class="case-idx">09 / datacenter</span>
+<div class="case-tags"><span class="tag">Baie serveur</span><span class="tag">Câble management</span></div>
+</div>
+<h3>Refonte du câblage de la baie serveur</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>Baie au câblage désordonné, compliquant chaque maintenance et intervention.</p></div>
+<div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Repensé et refait entièrement le câble management de la baie, du repérage à la mise au propre.</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p>Une baie propre et lisible : interventions plus rapides, diagnostic facilité, meilleure circulation d'air et fiabilité.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-media">
+<div class="win" style="position:relative!important;display:block!important;width:100%!important;height:40px!important;min-height:40px!important;box-sizing:border-box!important;overflow:hidden!important;"><div class="dots" style="position:absolute!important;left:14px!important;top:50%!important;transform:translateY(-50%)!important;z-index:2!important;display:flex!important;"><i></i><i></i><i></i></div><span style="position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;display:block!important;width:max-content!important;max-width:calc(100% - 100px)!important;margin:0!important;padding:0!important;box-sizing:border-box!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;z-index:1!important;">docuseal — signature horodatée</span></div>
+<svg aria-label="Signature électronique de PDF horodatée avec DocuSeal" role="img" viewbox="0 0 640 250">
+<rect fill="#0B1620" height="250" width="640"></rect>
+<rect fill="#F4F6F8" height="202" rx="6" width="300" x="40" y="24"></rect>
+<g fill="#C9D2DB"><rect height="9" rx="4" width="180" x="64" y="48"></rect><rect height="7" rx="3" width="252" x="64" y="68"></rect><rect height="7" rx="3" width="240" x="64" y="82"></rect><rect height="7" rx="3" width="248" x="64" y="96"></rect><rect height="7" rx="3" width="180" x="64" y="110"></rect></g>
+<rect fill="#fff" height="56" rx="6" stroke="#3DD68C" stroke-width="1.5" width="252" x="64" y="150"></rect>
+<text fill="#4A5C6E" font-family="monospace" font-size="10" x="76" y="170">Signature</text>
+<path d="M80 194 q 14 -20 28 0 t 28 0 q 10 -14 22 -2" fill="none" stroke="#0C1A2B" stroke-width="2"></path>
+<circle cx="296" cy="178" fill="#3DD68C" r="13"></circle><path d="M290 178 l4 4 l8 -9" fill="none" stroke="#fff" stroke-width="2.5"></path>
+<rect fill="#10202F" height="130" rx="10" stroke="#1B2C3E" width="228" x="372" y="60"></rect>
+<circle cx="416" cy="100" fill="none" r="20" stroke="#F5A623" stroke-width="2.5"></circle><line stroke="#F5A623" stroke-width="2.5" x1="416" x2="416" y1="100" y2="86"></line><line stroke="#F5A623" stroke-width="2.5" x1="416" x2="427" y1="100" y2="106"></line>
+<text fill="#E7EDF3" font-family="monospace" font-size="12" x="448" y="96">Horodaté</text>
+<text fill="#8FA6BA" font-family="monospace" font-size="11" x="448" y="114">source officielle</text>
+<text fill="#3DD68C" font-family="monospace" font-size="12" x="396" y="156">● valeur probante</text>
+<text fill="#8FA6BA" font-family="monospace" font-size="11" x="396" y="176">date certaine garantie</text>
+</svg>
+</div>
+<div class="case-top">
+<span class="case-idx">10 / signature électronique</span>
+<div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">DocuSeal</span><span class="tag">Signature PDF</span><span class="tag">Horodatage</span><span class="tag">Auto-hébergé</span></div>
+</div>
+<h3>Signature électronique horodatée avec DocuSeal</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>Besoin de faire signer des PDF avec une vraie valeur probante et une date certaine, sans passer par un service tiers payant.</p></div>
+<div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis déployé DocuSeal en auto-hébergement pour la signature électronique de PDF, relié à un service d'horodatage officiel afin de dater chaque signature de manière certaine.</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p>Un circuit de signature interne, sécurisé et horodaté : des documents à valeur probante, produits en interne et sous contrôle.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-media">
+<div class="win" style="position:relative!important;display:block!important;width:100%!important;height:40px!important;min-height:40px!important;box-sizing:border-box!important;overflow:hidden!important;"><div class="dots" style="position:absolute!important;left:14px!important;top:50%!important;transform:translateY(-50%)!important;z-index:2!important;display:flex!important;"><i></i><i></i><i></i></div><span style="position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;display:block!important;width:max-content!important;max-width:calc(100% - 100px)!important;margin:0!important;padding:0!important;box-sizing:border-box!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;z-index:1!important;">prestashop — boutique en ligne</span></div>
+<svg aria-label="Boutique PrestaShop sécurisée avec modules transporteurs" role="img" viewbox="0 0 640 250">
+<rect fill="#0B1620" height="250" width="640"></rect>
+<rect fill="#10202F" height="38" width="640" x="0" y="0"></rect>
+<circle cx="24" cy="19" fill="#3DD68C" r="7"></circle><text fill="#3DD68C" font-family="monospace" font-size="11" x="40" y="24">🔒 https</text>
+<text fill="#E7EDF3" font-family="monospace" font-size="12" x="150" y="24">boutique PGDIS</text>
+<text fill="#8FA6BA" font-family="monospace" font-size="11" x="470" y="24">panier · commande</text>
+<g>
+<rect fill="#10202F" height="96" rx="8" width="132" x="16" y="54"></rect><rect fill="#16283A" height="52" rx="4" width="100" x="32" y="68"></rect><rect fill="#3a5064" height="8" rx="4" width="70" x="32" y="128"></rect>
+<rect fill="#10202F" height="96" rx="8" width="132" x="160" y="54"></rect><rect fill="#16283A" height="52" rx="4" width="100" x="176" y="68"></rect><rect fill="#3a5064" height="8" rx="4" width="70" x="176" y="128"></rect>
+<rect fill="#10202F" height="96" rx="8" width="132" x="304" y="54"></rect><rect fill="#16283A" height="52" rx="4" width="100" x="320" y="68"></rect><rect fill="#3a5064" height="8" rx="4" width="70" x="320" y="128"></rect>
+</g>
+<rect fill="#10202F" height="180" rx="8" width="172" x="452" y="54"></rect>
+<text fill="#8FA6BA" font-family="monospace" font-size="11" x="468" y="78">Livraison</text>
+<rect fill="#0B1620" height="40" rx="6" stroke="#3DD68C" width="140" x="468" y="90"></rect><circle cx="484" cy="110" fill="none" r="6" stroke="#3DD68C" stroke-width="2"></circle><circle cx="484" cy="110" fill="#3DD68C" r="3"></circle><text fill="#E7EDF3" font-family="monospace" font-size="11" x="500" y="114">Chronopost</text>
+<rect fill="#0B1620" height="40" rx="6" stroke="#1B2C3E" width="140" x="468" y="138"></rect><circle cx="484" cy="158" fill="none" r="6" stroke="#8FA6BA" stroke-width="2"></circle><text fill="#E7EDF3" font-family="monospace" font-size="11" x="500" y="162">Mondial Relay</text>
+<text fill="#8FA6BA" font-family="monospace" font-size="10" x="468" y="204">+ points relais</text>
+<text fill="#3DD68C" font-family="monospace" font-size="11" x="468" y="222">● sécurisée</text>
+<rect fill="#10202F" height="70" rx="8" width="420" x="16" y="164"></rect>
+<text fill="#8FA6BA" font-family="monospace" font-size="11" x="32" y="188">Tunnel de commande</text>
+<g fill="#3DD68C" font-family="monospace" font-size="11"><text x="32" y="210">✓ panier</text><text x="120" y="210">✓ livraison</text><text x="230" y="210">✓ paiement</text><text x="340" y="210">✓ confirmé</text></g>
+</svg>
+</div>
+<div class="case-top">
+<span class="case-idx">11 / e-commerce</span>
+<div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">PrestaShop</span><span class="tag">Sécurisation</span><span class="tag">Chronopost</span><span class="tag">Mondial Relay</span></div>
+</div>
+<h3>Boutique PrestaShop montée et sécurisée de A à Z</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>Besoin d'une boutique en ligne complète, maîtrisée en interne et prête pour l'expédition.</p></div>
+<div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis déployé et configuré PrestaShop de A à Z, avec sécurisation de l’environnement et intégration des modules transporteurs (Chronopost, Mondial Relay, points relais…).</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p>Une boutique opérationnelle et sécurisée, avec expédition et points relais intégrés directement au tunnel de commande.</p></div>
+</div>
+</article>
+<article class="case reveal">
+<div class="case-top">
+<span class="case-idx">12 / gestion de parc</span>
+<div class="case-tags"><span class="tag">Ubuntu 24.04 LTS</span><span class="tag">GLPI</span><span class="tag">Gestion de parc</span><span class="tag">Support</span></div>
+</div>
+<h3>Serveur GLPI monté de zéro</h3>
+<div class="case-body">
+<div class="case-col"><div class="lab">Contexte</div><p>Il n’existait pas de serveur GLPI pour centraliser la gestion du parc et les besoins de support.</p></div>
+<div class="case-col"><div class="lab">Ce que j'ai fait</div><p>Installé un serveur Ubuntu 24.04 LTS de zéro, puis déployé et configuré GLPI pour disposer d’un outil central de gestion du parc informatique et du support.</p></div>
+<div class="case-col result"><div class="lab">Résultat</div><p>Une base GLPI opérationnelle et maîtrisée en interne, offrant un point central pour suivre le parc et structurer le support.</p></div>
+</div>
+</article>
+</div>
+</div>
 </section>
-
 <!-- EXPERIENCE -->
-<section id="experience" class="ink">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Parcours</span>
-      <h2>Sept ans d’expérience en informatique</h2>
-    </div>
-    <div class="timeline">
-      <div class="tl-item current reveal">
-        <div class="tl-date">2024 — 2026</div>
-        <h3>Administrateur système</h3>
-        <div class="tl-org">PGDIS · Enval</div>
-        <ul>
-          <li>Administration et supervision de l'infrastructure système et réseau.</li>
-          <li>Installation de serveurs Linux et déploiement de services internes : GLPI, Docker/Portainer, MeshCentral, DocuSeal et PrestaShop.</li>
-          <li>Sauvegarde et restauration avec Veeam ; participation à une reprise après incident ayant permis de relancer l’activité en moins de 48 h avec ~6 h de perte de données.</li><li>Refonte Active Directory : groupes et droits d’accès ; administration du tenant Microsoft 365 et de SharePoint Online.</li><li>Virtualisation, cloud, sécurité, gestion du parc et maintien en conditions opérationnelles.</li>
-          <li>Pilotage des activités, reporting et suivi de la sous-traitance.</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-date">2015 — 2022</div>
-        <h3>Key User (technicien informatique) · Responsable d'entrepôt</h3>
-        <div class="tl-org">GEFCO · Sites de Bourg-en-Bresse &amp; Corbas</div>
-        <ul>
-          <li>Référent informatique et support des utilisateurs sur deux sites.</li>
-          <li>Responsable d'entrepôt : organisation, encadrement et exploitation logistique.</li>
-          <li>Remplacement de la responsable d'exploitation.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<section class="ink" id="experience">
+<div class="wrap">
+<div class="section-head reveal">
+<span class="eyebrow">Parcours</span>
+<h2>Sept ans d’expérience en informatique</h2>
+</div>
+<div class="timeline">
+<div class="tl-item current reveal">
+<div class="tl-date">2024 — 2026</div>
+<h3>Administrateur système</h3>
+<div class="tl-org">PGDIS · Enval</div>
+<ul>
+<li>Administration et supervision de l'infrastructure système et réseau.</li>
+<li>Installation de serveurs Linux et déploiement de services internes : GLPI, Docker/Portainer, MeshCentral, DocuSeal et PrestaShop.</li>
+<li>Sauvegarde et restauration avec Veeam ; participation à une reprise après incident ayant permis de relancer l’activité en moins de 48 h avec ~6 h de perte de données.</li><li>Refonte Active Directory : groupes et droits d’accès ; administration du tenant Microsoft 365 et de SharePoint Online.</li><li>Virtualisation, cloud, sécurité, gestion du parc et maintien en conditions opérationnelles.</li>
+<li>Pilotage des activités, reporting et suivi de la sous-traitance.</li>
+</ul>
+</div>
+<div class="tl-item reveal">
+<div class="tl-date">2015 — 2022</div>
+<h3>Key User (technicien informatique) · Responsable d'entrepôt</h3>
+<div class="tl-org">GEFCO · Sites de Bourg-en-Bresse &amp; Corbas</div>
+<ul>
+<li>Référent informatique et support des utilisateurs sur deux sites.</li>
+<li>Responsable d'entrepôt : organisation, encadrement et exploitation logistique.</li>
+<li>Remplacement de la responsable d'exploitation.</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-
 <!-- FORMATION -->
 <section id="formation">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Formation &amp; certifications</span>
-      <h2>Un socle validé sur le terrain</h2>
+<div class="wrap">
+<div class="section-head reveal">
+<span class="eyebrow">Formation &amp; certifications</span>
+<h2>Un socle validé sur le terrain</h2>
+</div>
+<div class="form-grid">
+<div class="form-card reveal">
+<div class="yr">2024</div>
+<h3>Titre professionnel — Technicien d'assistance informatique</h3>
+<p>Human Booster · Clermont-Ferrand</p>
+</div>
+<div class="form-card reveal">
+<div class="yr">CACES</div>
+<h3>CACES 1, 3, 5</h3>
+<p>ADEA · Bourg-en-Bresse</p>
+</div>
+<div class="form-card reveal">
+<div class="yr">CAP</div>
+<h3>CAP Cuisine</h3>
+<p>CECOF · Ambérieu-en-Bugey</p>
+</div>
+</div>
+<div class="lang-line reveal">
+<b>Langues</b> · Français (natif) — Anglais lu et écrit
     </div>
-    <div class="form-grid">
-      <div class="form-card reveal">
-        <div class="yr">2024</div>
-        <h3>Titre professionnel — Technicien d'assistance informatique</h3>
-        <p>Human Booster · Clermont-Ferrand</p>
-      </div>
-      <div class="form-card reveal">
-        <div class="yr">CACES</div>
-        <h3>CACES 1, 3, 5</h3>
-        <p>ADEA · Bourg-en-Bresse</p>
-      </div>
-      <div class="form-card reveal">
-        <div class="yr">CAP</div>
-        <h3>CAP Cuisine</h3>
-        <p>CECOF · Ambérieu-en-Bugey</p>
-      </div>
-    </div>
-    <div class="lang-line reveal">
-      <b>Langues</b> · Français (natif) — Anglais lu et écrit
-    </div>
-  </div>
+</div>
 </section>
-
 <!-- CV -->
 <section id="cv">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Curriculum vitae</span>
-      <h2>Mon CV, en une page</h2>
-      <p>Mon parcours, mes compétences techniques et mon expérience professionnelle réunis dans un CV clair et directement téléchargeable.</p>
-    </div>
-    <div class="cv-box reveal" style="background:#fff;border:1px solid #E1E6EB;border-radius:14px;padding:22px;box-shadow:0 18px 40px -30px rgba(12,26,43,.35)">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:18px">
-        <div>
-          <div style="font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--signal-deep)">Sébastien Marti</div>
-          <div style="font-family:var(--display);font-size:1.35rem;font-weight:600;margin-top:5px">Administrateur systèmes &amp; réseaux</div>
-        </div>
-        <a href="CV-Sebastien-Marti.pdf" class="btn btn-primary" target="_blank" rel="noopener">Télécharger le CV PDF ↓</a>
-      </div>
-      <div style="border:1px solid #D5E0E7;border-radius:10px;overflow:hidden;background:#F3F7F9">
-        <iframe src="CV-Sebastien-Marti.pdf#view=FitH" title="CV de Sébastien Marti" loading="lazy" tabindex="-1" style="display:block;width:100%;height:900px;border:0"></iframe>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="section-head reveal">
+<span class="eyebrow">Curriculum vitae</span>
+<h2>Mon CV, en une page</h2>
+<p>Mon parcours, mes compétences techniques et mon expérience professionnelle réunis dans un CV clair et directement téléchargeable.</p>
+</div>
+<div class="cv-box reveal" style="background:#fff;border:1px solid #E1E6EB;border-radius:14px;padding:22px;box-shadow:0 18px 40px -30px rgba(12,26,43,.35)">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:18px">
+<div>
+<div style="font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--signal-deep)">Sébastien Marti</div>
+<div style="font-family:var(--display);font-size:1.35rem;font-weight:600;margin-top:5px">Administrateur systèmes &amp; réseaux</div>
+</div>
+<a class="btn btn-primary" href="CV-Sebastien-Marti.pdf" rel="noopener" target="_blank">Télécharger le CV PDF ↓</a>
+</div>
+<div style="border:1px solid #D5E0E7;border-radius:10px;overflow:hidden;background:#F3F7F9">
+<iframe loading="lazy" src="CV-Sebastien-Marti.pdf#view=FitH" style="display:block;width:100%;height:900px;border:0" tabindex="-1" title="CV de Sébastien Marti"></iframe>
+</div>
+</div>
+</div>
 </section>
-
 <!-- CONTACT -->
-<section id="contact" class="contact">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="status-pill"><i></i>Ouvert aux opportunités</span>
-      <h2>On échange ?</h2>
-      <p class="sub">Un poste d'administrateur système, une infrastructure à faire tenir ou un projet à piloter — écrivez-moi, je réponds vite.</p>
-      <div class="contact-cards">
-        <a class="cc" href="mailto:Seb929@Hotmail.com">
-          <span class="k">Email</span>
-          <span class="v">Seb929@Hotmail.com</span>
-        </a>
-        <a class="cc" href="tel:+33665038020">
-          <span class="k">Téléphone</span>
-          <span class="v">06 65 03 80 20</span>
-        </a>
-        <div class="cc">
-          <span class="k">Localisation</span>
-          <span class="v">Riom (63)</span>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="contact" id="contact">
+<div class="wrap">
+<div class="reveal">
+<span class="status-pill"><i></i>Ouvert aux opportunités</span>
+<h2>On échange ?</h2>
+<p class="sub">Un poste d'administrateur système, une infrastructure à faire tenir ou un projet à piloter — écrivez-moi, je réponds vite.</p>
+<div class="contact-cards">
+<a class="cc" href="mailto:Seb929@Hotmail.com">
+<span class="k">Email</span>
+<span class="v">Seb929@Hotmail.com</span>
+</a>
+<a class="cc" href="tel:+33665038020">
+<span class="k">Téléphone</span>
+<span class="v">06 65 03 80 20</span>
+</a>
+<div class="cc">
+<span class="k">Localisation</span>
+<span class="v">Riom (63)</span>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <footer>
-  <div class="wrap">
-    <span>© 2026 Sébastien Marti — Administrateur système</span>
-    <span>Statut : <span style="color:var(--ok)">● opérationnel</span></span>
-  </div>
+<div class="wrap">
+<span>© 2026 Sébastien Marti — Administrateur système</span>
+<span>Statut : <span style="color:var(--ok)">● opérationnel</span></span>
+</div>
 </footer>
-
 <script>
   // Menu mobile
   var burger=document.getElementById('burger'),menu=document.getElementById('menu');
