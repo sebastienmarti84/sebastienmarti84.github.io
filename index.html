@@ -637,6 +637,97 @@ nav .wrap{
 }
 </style>
 
+
+<style id="fix-libelles-visuels-desktop-mobile">
+/*
+  Zone de sécurité pour les libellés situés EN HAUT des illustrations.
+  On ne touche pas au contenu : on crée simplement une marge interne gauche/droite
+  pour empêcher le premier caractère d'être rogné par le bord de la carte.
+*/
+.case-media{
+  box-sizing:border-box!important;
+  width:100%!important;
+  max-width:100%!important;
+  overflow:hidden!important;
+}
+
+/* Les éléments graphiques internes restent contenus dans la carte */
+.case-media > svg,
+.case-media > img,
+.case-media > canvas,
+.case-media > video{
+  display:block!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:auto!important;
+  box-sizing:border-box!important;
+}
+
+/* Tous les libellés HTML éventuels de la zone média */
+.case-media h1,
+.case-media h2,
+.case-media h3,
+.case-media h4,
+.case-media p,
+.case-media figcaption,
+.case-media .media-title,
+.case-media .visual-title,
+.case-media .illustration-title,
+.case-media .caption{
+  box-sizing:border-box!important;
+  width:100%!important;
+  max-width:100%!important;
+  padding-left:20px!important;
+  padding-right:20px!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+  overflow-wrap:anywhere!important;
+}
+
+/*
+  Les illustrations SVG du portfolio contiennent aussi leurs propres textes.
+  Une petite marge latérale sur le SVG entier évite que ces textes commencent
+  sous la bordure de la carte, sur PC comme sur téléphone.
+*/
+.case-media > svg{
+  width:calc(100% - 24px)!important;
+  margin-left:12px!important;
+  margin-right:12px!important;
+}
+
+/* Même sécurité si le visuel est une image raster */
+.case-media > img{
+  width:calc(100% - 24px)!important;
+  margin-left:12px!important;
+  margin-right:12px!important;
+  object-fit:contain!important;
+}
+
+@media (max-width:760px){
+  .case-media > svg,
+  .case-media > img{
+    width:calc(100% - 20px)!important;
+    margin-left:10px!important;
+    margin-right:10px!important;
+  }
+
+  .case-media h1,
+  .case-media h2,
+  .case-media h3,
+  .case-media h4,
+  .case-media p,
+  .case-media figcaption,
+  .case-media .media-title,
+  .case-media .visual-title,
+  .case-media .illustration-title,
+  .case-media .caption{
+    padding-left:14px!important;
+    padding-right:14px!important;
+  }
+}
+</style>
+
 </head>
 <body>
 
